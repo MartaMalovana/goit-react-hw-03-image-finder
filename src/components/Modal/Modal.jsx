@@ -5,13 +5,10 @@ import {Overlay, ModalImage, Button} from './Modal.styled';
 const modalRoot = document.querySelector('#root-modal');
 
 export default class Modal extends Component {
-    state = {
-
-    };
 
     handleClick = () => {
         this.props.onClick();
-    }
+    };
 
     render () {
         return createPortal(
@@ -23,4 +20,4 @@ export default class Modal extends Component {
             </Overlay>, modalRoot
         );
     };
-}
+};

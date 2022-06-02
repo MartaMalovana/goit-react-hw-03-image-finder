@@ -6,14 +6,13 @@ import {Header, SearchForm, Button, Input} from './Searchbar.styled';
 
 
 export default class Searchbar extends Component {
-
     state = {
         searchWord: null
     };
 
     handleChange = event => {
         this.setState({searchWord: event.currentTarget.value});
-    }
+    };
 
     handleSubmit = event => {
         event.preventDefault();
@@ -31,7 +30,7 @@ export default class Searchbar extends Component {
             <Header className="searchbar">
                 <SearchForm className="form" onSubmit={this.handleSubmit}>
                     <Button type="submit" className="button">
-                    <IconContext.Provider value={{size: "2em"}}><FcSearch/></IconContext.Provider>
+                        <IconContext.Provider value={{size: "2em"}}><FcSearch/></IconContext.Provider>
                     </Button>
                 
                     <Input
@@ -45,7 +44,7 @@ export default class Searchbar extends Component {
                     />
                 </SearchForm>
             </Header>
-      )
+      );
     };   
 };
 

@@ -7,7 +7,7 @@ export default class ImageGalleryItem extends Component {
         const modalImage = this.props.result.largeImageURL;
         this.props.modalPhoto(modalImage);
         this.props.onClick();
-    }
+    };
 
     render () {
         const {webformatURL, tags} = this.props.result;
@@ -17,5 +17,5 @@ export default class ImageGalleryItem extends Component {
                 <Photo src={webformatURL} alt={tags} />
             </Result>
         );
-    }
-}
+    };
+};

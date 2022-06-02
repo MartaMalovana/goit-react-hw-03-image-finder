@@ -20,7 +20,6 @@ export default class App extends Component {
         <ImageGallery searchWord={inputWord}></ImageGallery>
       </div>
     );
-  }
-}
+  };
+};
 
-// export default App;

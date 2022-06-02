@@ -19,3 +19,8 @@ export const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
 `;
+
+export const PaginationContainer = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+`;
